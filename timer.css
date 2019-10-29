@@ -8,7 +8,7 @@ body {
 
 /** formatting for the container type */
 .container {
-	background: #FFFAFE;
+	background: #FFF0FC;
 	width: 100%;
 	height: 100vh;
 	display: flex;
