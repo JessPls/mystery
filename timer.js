@@ -26,3 +26,10 @@ function getCountdown() {
 		document.getElementById("timer").innerHTML = "Everything is about to change";
 	}
 }
+
+// main function where program execution will start
+function main() {
+	while (true) {
+		setTimeout(getCountdown(), 1000);
+	}
+}
