@@ -1,5 +1,5 @@
 // declare global variables for the end date on the timer
-var endDate = new Date("Jan 7, 2020 15:00:00").getTime();
+var endDate = new Date("Jan 6, 2020 15:00:00").getTime();
 
 // declare a global variable for the timer, referencing a function, which is executed every second
 var timer = setInterval(timer(), 1000);
@@ -17,7 +17,7 @@ function timer() {
 		let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 		let secs = Math.floor((t % (1000 * 60)) / 1000);
 		
-		document.getElementById("timer-days").innerHTML = days + "<span class='label'>DAY{S}</span>";
+		document.getElementById("timer-days").innerHTML = days + "<span class='label'>DAY(S)</span>";
 		document.getElementById("timer-hours").innerHTML = ("0" + hours).slice(-2) + "<span class='label'>HR(S)</span>";
 		document.getElementById("timer-mins").innerHTML = ("0" + mins).slice(-2) + "<span class='label'>MIN(S)</span>";
 		document.getElementById("timer-secs").innerHTML = ("0" + secs).slice(-2) + "<span class='label'>SEC(S)</span>";
