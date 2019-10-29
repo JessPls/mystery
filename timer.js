@@ -2,14 +2,14 @@
 var endDate = new Date("Jan 6, 2020 15:00:00").getTime();
 
 // declare a global variable for the timer, referencing a function, which is executed every second
-var timer = setInterval(getCountdown(), 1000);
+var timer = setInterval(getCountdown, 1000);
 
 // function used to update the timer every second
 function getCountdown() {
 	// declare local variables for the current time and the relative time
 	let now = new Date().getTime();
 	let t = endDate - now;
-	
+	console.log("1");
 	// interpret the relative time to get values for the timer
 	if (t >= 0) {
 		let days = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -24,14 +24,5 @@ function getCountdown() {
 	} else {
 		// Looking through my code? Sneaky. I'd never give anything away this easily...
 		document.getElementById("timer").innerHTML = "Everything is about to change";
-	}
-}
-
-// main function where program execution will start
-function main() {
-	console.log("1");
-	while (true) {
-		setTimeout(getCountdown(), 1000);
-		console.log("2");
 	}
 }
