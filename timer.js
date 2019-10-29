@@ -29,7 +29,9 @@ function getCountdown() {
 
 // main function where program execution will start
 function main() {
+	console.log("1");
 	while (true) {
 		setTimeout(getCountdown(), 1000);
+		console.log("2");
 	}
 }
