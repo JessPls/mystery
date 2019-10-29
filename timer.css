@@ -1,0 +1,29 @@
+/** This is the css style document for the countdown timer */
+
+/** formatting for the body tag */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/** formatting for the container type */
+.container {
+	background: #FAE3F7;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/** formatting for the timer object */
+#timer {
+	color: #000000;
+	font-size: 4rem;
+}
+
+/** formatting for the label type */
+.label {
+	font-size: 2.5rem;
+	padding-left: 0.25rem;
+}
