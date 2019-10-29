@@ -9,7 +9,7 @@ function getCountdown() {
 	// declare local variables for the current time and the relative time
 	let now = new Date().getTime();
 	let t = endDate - now;
-	console.log("1");
+	
 	// interpret the relative time to get values for the timer
 	if (t >= 0) {
 		let days = Math.floor(t / (1000 * 60 * 60 * 24));
