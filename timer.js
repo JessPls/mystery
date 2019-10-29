@@ -2,7 +2,10 @@
 var endDate = new Date("Jan 7, 2020 15:00:00").getTime();
 
 // declare a global variable for the timer, referencing a function, which is executed every second
-var timer = setInterval(timer() {
+var timer = setInterval(timer(), 1000);
+
+// function used to update the timer every second
+function timer() {
 	// declare local variables for the current time and the relative time
 	let now = new Date().getTime();
 	let t = endDate - now;
@@ -24,4 +27,4 @@ var timer = setInterval(timer() {
 	}
 	
 	
-}, 1000);
+}
