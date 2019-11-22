@@ -1,5 +1,5 @@
 // declare global variable for the end date on the timer
-var endDate = new Date(December 19 2019 13:00).getTime();
+var endDate = new Date("dec 19, 2019 13:00:00").getTime();
 
 // declare a global variable for the timer, referencing a function, which is executed every second
 var timer = setInterval(getCountdown, 1000);
